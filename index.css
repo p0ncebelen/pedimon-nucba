@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("./fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url("./fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url("./fonts/Lato-Regular.ttf");
+}
+
+body {
+    font-family: 'LatoRegular';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 30%;
+    
+}
+
+.list-navegacion {
+    width: 107%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #0c4ea2;
+}
+
+.chuchito{
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.chuchito img{
+    width: 15%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex: wrap;
+    flex-direction: column;
+    background-color: #f7de82;
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-atrapalos{
+    width: 34%;
+   
+}
+
+.container-atrapalos img {
+    width: 70%;
+   
+}
+
+.container-atrapalos p{
+    font-size: 1.5em;
+    font-family: 'LatoLight';
+    
+}
+
+#pikachuchi {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.container-atrapalos button{
+    width: 34%;
+    height: 28px;
+    color: white;
+    background-color: #0c4ea2;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-family: 'Lato';
+    padding: 7px;
+    min-width: 160px;
+}
+
+.section-info{
+    background-color: #0c4ea2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-info h2{
+    color: #f7de82;
+    font-family: 'LatoLight';
+    text-transform: uppercase;
+    font-size: 2.3em;
+}
+
+.section-info h4{
+    width: 40%;
+    margin: -20px;
+    padding: 0;
+    color: white;
+    font-size: 0.9em;
+    font-family:'LatoLight';
+    text-align: center;
+}
+
+.container-info {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.container-img-info{
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-img-info p {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'LatoLight';
+    text-align: center;
+}
+
+.boton-atrapar:hover{
+background-color: white;
+color: #0c4ea2;
+cursor:pointer;
+}
+
+.link:hover{
+color: white;
+text-decoration: underline;
+}
+
+.section-lista-pedis{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ margin-top: 40px;
+}
+
+.section-lista-pedis h2 {
+    font-family: 'LatoLight';
+    text-align: center;
+    color: #0c4ea2;
+    font-size: 2em;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 28%;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    border-radius: 20px;
+    transition: transform 150ms ease-in;
+    min-width: 250px;
+}
+
+.card img{
+    width: 85%;
+    transition: transform 150ms ease-in;
+}
+
+.card h3{
+    color: #0c4ea2;
+    font-family: 'LatoLight';
+    font-size: 1.3em;
+}
+
+.card p {
+    color: #0c4ea2;
+    font-family: 'Lato';
+    font-size: 1.4em;
+}
+
+.card button {
+    width: 70%;
+    height: 50px;
+    color: white;
+    background-color:  #f7de82;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    min-width: 100px;
+}
+
+.card button:hover{
+    background-color: #0c4ea2;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card:hover .agotado {
+    transform: scale(1.1);
+}
+
+.agotado {
+    z-index: 3;
+    position: absolute;
+    background-color: red;
+    color: white !important;
+    top: 0px;
+    padding: 10px;
+    width: 60;
+    text-align: center;
+
+}
